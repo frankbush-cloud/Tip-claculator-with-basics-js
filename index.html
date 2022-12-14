@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body>
+  <div class="wrapper">
+    <h3 id="spliter">spli<br>tter</h3>
+    <div class="calculator">
+      <div class="calc-input">
+        <div class="bill-amount-container">
+          <h2>Bill</h2>
+          <div class="bill-input-container">
+                <input type="number" value="" class="bill-input input" id="bill-input">
+              
+            </button>
+          </div>
+        </div>
+        <div class="select-tip-container">
+          <label for="">select Tip %</label>
+          <div class="select-tip-buttons">
+            <div class="percantage-btn ">5%</div>
+            <div class="percantage-btn">10%</div>
+            <div class="percantage-btn active-tip">15%</div>
+            <div class="percantage-btn">25%</div>
+            <div class="percantage-btn">50%</div>
+            <div class="percantage-btn">
+              <input type="text" type="number" class="percantage-btn" placeholder="custom" id="tip-custom">
+            </div>
+          </div>
+        </div>
+        <div class="no-of-people">
+          <div class="people-error">
+            <p>Number of people</p>
+            <p class="error">Can't be zero</p>
+          </div>
+          <div class="people-input-container">
+            <input type="number" value="" class="people-input input" id="people-input">
+          </div>
+        </div>
+      </div>
+      <div class="calc-ouput">
+        <div class="tip-container">
+          <div class="tip-amount">
+            <div>
+              <p class="tip-text">Tip amount</p>
+              <span class="tip-span">/ person</span>
+            </div>
+            <div class="tip-cash">
+              <span id="tip-cash-amount">$4.27</span>
+            </div>
+          </div>
+          <div class="tip-amount">
+            <div>
+              <p class="tip-text">Total</p>
+              <span class="tip-span">/ person</span>
+            </div>
+            <div class="tip-cash">
+              <span id="total-amount-cash">$32.79</span>
+            </div>
+          </div>
+        </div>
+        <button class="reset">
+          reset
+        </button>
+      </div>
+    </div>
+  </div>
+ 
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Franklin Bush</a>.
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>

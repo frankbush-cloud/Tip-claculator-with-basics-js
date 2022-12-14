@@ -1,0 +1,191 @@
+/* colors */
+:root{
+    --Strong-cyan: hsl(172, 67%, 45%);
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+--Dark-grayish-cyan: hsl(186, 14%, 43%);
+--Grayish-cyan: hsl(184, 14%, 56%);
+--Light-grayish-cyan: hsl(185, 41%, 84%);
+--Very-light-grayish-cyan: hsl(189, 41%, 97%);
+--White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+ Font-size: 24px;
+ font-family: 'Space Mono', monospace;
+ display: grid;
+ min-height: 100vh;
+ align-items: center;
+ justify-content: center;
+}
+.wrapper{
+    background: var(--Light-grayish-cyan);
+}
+
+#spliter{
+    color: var(--Very-dark-cyan);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+}
+.calculator {
+    background: var(--White);
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px; /* Round the edges */
+    overflow: hidden; /* don't let other elements go outside the calculator */
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12); /* Give the calculator some depth off the page */
+    /*max-inline-size: 22rem; /* This is the Logical Property for max-width and has very good browser support */
+  }
+
+  /* styling the input-calc */
+  .select-tip-buttons{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .bill-input{
+  background-image: url(./images/icon-dollar.svg);
+  
+  }
+  .input{
+    border: none;
+    outline: none;
+    padding: 5px;
+    padding-right: 18px;
+    background-position: 10px;
+    background-repeat: no-repeat;
+    background-color: var(--Very-light-grayish-cyan);
+    text-align: right;
+    font-size: 24px;
+    color: var(--Very-dark-cyan);
+    font-weight: bolder;
+  }
+  .bill-amount-container h2{
+    font-size: 14px;
+    color: var(--Grayish-cyan);
+  }
+  .number-of-persons{
+    color: var(--Very-dark-cyan);
+  }
+  .select-tip-container label{
+    font-size: 14px;
+    color: var(--Grayish-cyan);
+  }
+  .percantage-btn{
+    background: var(--Very-dark-cyan);
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 100;
+    padding: 8px;
+  }
+  .no-of-people p{
+    font-size: 14px;
+    color: var(--Grayish-cyan);
+  }
+  .percantage-btn:last-of-type{
+    background: var(--Very-light-grayish-cyan);
+    color: var(--Grayish-cyan);
+  }
+  .bill-input-container button span{
+    color: var(--Very-dark-cyan);
+    font-size: 20px;
+    font-weight: 800;
+    
+  }
+  .bill-input-container button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+    color: var(--Very-dark-cyan);
+  }
+  .people-input-container button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+  }
+  .people-input{
+    background-image: url(./images/icon-person.svg);
+  }
+  .no-of-people{
+    margin: 20px;
+  }
+
+  .active-tip{
+    color: var(--Very-dark-cyan);
+    background-color: var(--Strong-cyan);
+    font-weight: bolder;
+  }
+  .people-error{
+    display: flex;
+    justify-content: space-between;
+  }
+  .error{
+    display: none;
+  }
+
+  /* styling calc-output */
+  .calc-ouput{
+    background: var(--Very-dark-cyan);
+    border-radius: 10px;
+    margin-left: 10px;
+    padding: 30px 20px;
+    
+  }
+  .tip-amount{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .tip-text{
+    font-size: 16px;
+    color: var(--White);
+  }
+  .tip-span{
+    font-size: 12px;
+    color: var(--Grayish-cyan);
+  }
+  .tip-cash{
+    font-size: 28px;
+    color: var(--Strong-cyan);
+  }
+  .reset
+  {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    color: var(--Very-dark-cyan);
+    text-transform: uppercase;
+    font-weight: 700;
+    background: var(--Strong-cyan);
+    border: none;
+    border-radius: 5px;
+  }
+
+
+  /* styling for larger screens */
+  @media (min-width: 600px){
+    .input{
+      width: 400px;
+    }
+    .calculator{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .select-tip-buttons{
+        grid-template-columns: repeat(3, 1fr);
+      }
+  }
